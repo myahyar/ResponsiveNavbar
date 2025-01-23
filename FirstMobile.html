@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD_Mobile_First</title>
+    <style type="text/css" media="all">
+  
+    
+              /* Gaya default (Mobile) */
+        body {
+          margin: 0;padding: 0;
+          width: 100vw;height: 100vh;
+          background-color: lightgrey;
+          border: 2px solid black;
+        }
+        .header{
+          display: flex;
+          flex-wrap: wrap;
+          width: 100vw;
+          background-color: blue;
+        }
+        .logo_nama{
+          display: flex;
+          width: 100%;
+          background-color:red ;
+          border-radius: 10px;
+        }
+        .logo{
+          width: 10%;height: 30px;
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+        .nama{
+          width: 90%;height: 30px;
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+        .nav{
+          width: 100%;height: 30px;
+          background-color: green;
+          border-radius: 10px;
+        }
+        
+        /* Gaya untuk tablet (>= 768px) */
+        @media (min-width: 768px) {
+          body {
+            background-color: lightblue;
+          }
+          .logo_nama{
+            width: 50%;
+          }
+          .nav{
+            width: 50% ;
+          }
+        }
+        
+        /* Gaya untuk desktop (>= 1024px) */
+        @media (min-width: 1024px) {
+          body {
+            background-color: lightgreen;
+          }
+          .logo_nama{
+            width: 30%;
+          }
+          .nav{
+            width: 70%;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo_nama">
+          <div class="logo">
+        
+          </div>
+          <div class="nama">
+            
+          </div>
+      </div>
+      <div class="nav">
+
+      </div>
+    </div>
+  </body>
+</html>
